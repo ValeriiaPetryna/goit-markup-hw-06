@@ -739,6 +739,154 @@ box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0p
     pointer-events: none;
 }
 
+textarea {
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+}
+
+.form-tittle {
+    font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 700;
+    font-size: 20px;
+     line-height: 23px;
+     text-align: center;
+     letter-spacing: 0.03em;
+     color: #212121;
+
+     display: block;
+     align-items: center;
+     justify-content: center;
+     margin-top: 40px ;
+     margin-left: 32,5px;
+     margin-right: 47,5px;
+    margin-bottom: 12px;
+
+}
+
+.form {
+    width: 448px;
+    height: 342;
+    margin-left: 32.5px;
+    margin-right: 47.5px;
+    margin-bottom: 20px;
+}
+
+.form-label {
+    margin-bottom: 4px;
+    
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
+
+.form-field input {
+    margin: 0;
+    padding: 6px 10px;
+    width: 448px;
+    height: 40px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    position: relative;
+}
+
+.form-field-comment {
+    width: 448px;
+    height: 138px;
+
+    
+    
+}
+
+.form-field input::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+     border-radius: 4px;
+
+ 
+}
+
+.policy-checkbox {
+    width: 425px;
+    height: 24px;
+
+
+}
+
+.policy-checkbox input[type='checkbox'] {
+    width: 16px;
+    height: 15px;
+    color: rgba(33, 33, 33, 1);
+}
+
+.policy {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+.agreement {
+    text-decoration-line: underline;
+    color: #2196F3;
+}
+
+
+.form-button {
+    width: 200px;
+        height: 50px;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.06em;
+color: #FFFFFF;
+
+background-color: #2196F3;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+margin-top: 30px ;
+margin-bottom: 40px;
+margin-left: 156.5px;
+margin-right: 171.5px;
+
+}
 
 
 /* Портфоліо */
@@ -886,3 +1034,4 @@ width: 130px;
     transform: translateY(0%);
 
 }
+
