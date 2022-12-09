@@ -888,6 +888,33 @@ margin-right: 171.5px;
 
 }
 
+.input-wrapper {
+    position: relative;
+   
+}
+.input-wrapper input {
+    margin-top: 0px;
+}
+.input-icon {
+    display: inline-block;
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    display: inline-block;
+   
+    width: 18px;
+    height: 18px;
+   
+    transform: translateY(-50%);
+fill: #212121;
+}
+
+.modal-input {
+    padding-left: 83px;
+}
+.modal-input:focus +.input-icon {
+    fill: #2196F3;
+}
 
 /* Портфоліо */
 .our-projects-list {

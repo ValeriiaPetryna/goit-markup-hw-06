@@ -467,33 +467,41 @@
 <p class="form-tittle" >Залиште свої дані, ми вам передзвонимо</p>
         <form class="form js-speaker-form">
           <div class="form-field">
-              <svg class="form-icon" width="18" height="18"  >
-                  <use href="./images/icons.svg#icon-person-black"></use>
-                </svg>
+              
           <label for="name" class="form-label" >Ім'я</label> 
-          <input class="form-input" 
+          <div class="input-wrapper">
+          <input class="modal-input"
           type="text"
            name="name" 
            id="name"
            autofocus 
           />
+          <svg class="input-icon" width="18" height="18"  >
+                  <use href="./images/icons.svg#icon-person-black"></use>
+                </svg>
+          </div>
           </div>
 <div class="form-field">
-    <svg class="form-icon" width="18" height="18"  >
-                  <use href="./images/icons.svg#icon-phone-black"></use>
-                </svg>
           <label  class="form-label" for="tel">Телефон</label>
-          <input type="tel" name="tel" id="tel" />
+          <div class="input-wrapper">
+          <input class="modal-input" type="tel" name="tel" id="tel" />
+          <svg class="input-icon" width="18" height="18"  >
+          <use href="./images/icons.svg#icon-phone-black"></use>
+          </svg>
+          </div>
 </div>
 <div class="form-field">
-    <svg class="form-icon" width="18" height="18"  >
+    
+          <label class="form-label" for="mail">Пошта</label>
+          <div class="input-wrapper">
+          <input class="modal-input" type="email" name="mail" id="mail" />
+<svg class="input-icon" width="18" height="18"  >
                   <use href="./images/icons.svg#icon-email-black"></use>
                 </svg>
-          <label class="form-label" for="mail">Пошта</label>
-          <input type="email" name="mail" id="mail" />
+          </div>
           </div>
 <div class="form-field form-field-comment">
-<label class="form-label"for="comment">Коментар</label>
+<label class="form-label" for="comment">Коментар</label>
           <textarea 
           name="comment" id="comment" rows="100%"  
           placeholder=" Введіть текст"
