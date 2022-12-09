@@ -803,6 +803,11 @@ textarea {
     position: relative;
 }
 
+.form-field input:focus, .form-field input:hover {
+    border-color:  #2196F3;
+
+}
+
 .form-field-comment {
     width: 448px;
     height: 138px;
@@ -812,6 +817,7 @@ textarea {
 }
 
 .form-field input::placeholder {
+    display: block;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -819,29 +825,14 @@ textarea {
     line-height: 14px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-
     border: 1px solid rgba(33, 33, 33, 0.2);
      border-radius: 4px;
 
  
 }
 
-.policy-checkbox {
-    width: 425px;
-    height: 24px;
-
-
-}
-
-.policy-checkbox input[type='checkbox'] {
-    width: 16px;
-    height: 15px;
-    color: rgba(33, 33, 33, 1);
-}
-
-.policy {
-
-    font-family: 'Roboto';
+.agree-label {
+font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -853,8 +844,40 @@ textarea {
     align-items: center;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+.check-line {
+margin: 10px 0;
+}
+.checkbox-agree {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-agree .icon-wrapper {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
+.checkbox-agree .agree-icon {
+    fill: transparent;
+}
+
+.check-line input:checked+.checkbox-agree .icon-wrapper {
+    background-color: #2196F3;
+    border: none;
+}
+.check-line input:checked +.checkbox-agree .agree-icon {
+    fill: #FFFFFF ;
+}
+
+
 
 .agreement {
     text-decoration-line: underline;
@@ -896,14 +919,15 @@ margin-right: 171.5px;
     margin-top: 0px;
 }
 .input-icon {
+    width: 18px;
+    height: 18px;
     display: inline-block;
     position: absolute;
     left: 12px;
     top: 50%;
     display: inline-block;
    
-    width: 18px;
-    height: 18px;
+
    
     transform: translateY(-50%);
 fill: #212121;
@@ -911,10 +935,15 @@ fill: #212121;
 
 .modal-input {
     padding-left: 83px;
+    border: 0px;
 }
+
+
+
 .modal-input:focus +.input-icon {
     fill: #2196F3;
 }
+
 
 /* Портфоліо */
 .our-projects-list {
